@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestorProyect.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2><a href="inicio.html" target="dynamicContent" style="color: yellow; text-decoration: none;">GestorProyect.com</a></h2>
+        <div>
+            <a href="USUARIO.html" target="dynamicContent">USUARIO</a>
+            <a href="FOROS.html" target="dynamicContent">FOROS</a>
+            <a href="PROYECTOS.html" target="dynamicContent">PROYECTOS</a>
+            <a href="DOCUMENTOS.html" target="dynamicContent">DOCUMENTOS</a>
+        </div>
+    </div>
+    <div class="navbarPHONE">
+        <button class="menu-btn">&#9776; Menu</button>
+        <div class="menu-items">
+            <a href="USUARIO.html" target="dynamicContent">USUARIO</a>
+            <a href="FOROS.html" target="dynamicContent">FOROS</a>
+            <a href="PROYECTOS.html" target="dynamicContent">PROYECTOS</a>
+            <a href="DOCUMENTOS.html" target="dynamicContent">DOCUMENTOS</a>
+        </div>
+    </div>
+    <iframe name="dynamicContent" src="inicio.html"></iframe>
+
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuBtn = document.querySelector(".menu-btn");
+            var menuItems = document.querySelector(".menu-items");
+        
+            menuBtn.addEventListener("click", function() {
+                menuItems.classList.toggle("show");
+            });
+        });
+        
+    </script>
+</body>
+</html>
